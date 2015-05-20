@@ -52,3 +52,9 @@ sudo apt-get install software-properties-common python-software-properties
 sudo add-apt-repository ppa:ubuntu-elisp/ppa
 sudo apt-get update
 sudo apt-get install emacs-snapshot
+
+
+# Install node
+sudo apt-add-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs
