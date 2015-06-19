@@ -47,6 +47,11 @@ ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
 
+# git aliases
+echo '[alias]' >> .gitconfig
+echo 'll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat' >> .gitconfig
+echo 'ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate' >> .gitconfig
+
 # Install emacs
 sudo apt-get install software-properties-common python-software-properties
 sudo add-apt-repository ppa:ubuntu-elisp/ppa
@@ -54,7 +59,5 @@ sudo apt-get update
 sudo apt-get install emacs-snapshot
 
 
-# Install node
-sudo apt-add-repository ppa:chris-lea/node.js
-sudo apt-get update
-sudo apt-get install nodejs
+# Install node https://github.com/nodesource/distributions/issues/63
+curl -sL https://deb.nodesource.com/setup_0.s12 | sudo bash -
