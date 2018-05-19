@@ -61,5 +61,5 @@ sudo apt-get install emacs-snapshot
 
 
 # Install node https://github.com/nodesource/distributions/issues/63
-curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
